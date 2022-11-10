@@ -510,3 +510,13 @@ input[type=submit]:hover {
     background-position: 0 50%;
 }
 }
+
+/* success message */
+
+.thanks{
+    text-align: left;
+    background-color: #5f0d0d;
+    font-size: larger;
+    font-weight: lighter;
+    color: cornsilk;
+}
