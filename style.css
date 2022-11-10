@@ -130,8 +130,8 @@ color:cornsilk ;
 } */
 
 .card{
-    width: 1000px;
-    height: 1000px;
+    width: 500px;
+    height: 500px;
     background-color: #5f0d0d;
     border-radius: 10px;
     outline: 1px solid cornsilk;
@@ -391,10 +391,18 @@ a:visited{
 .videogame{
 text-align: center;
 position: relative;
-top: 200px;
+top: 30px;
 font-weight: lighter;
 color: khaki;
 }
+
+.emoji{
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* page 4 contacts */
 
 
@@ -422,7 +430,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 position: relative;
-top: 300px;
+top: 100px;
 flex-direction: column;
 height: 100vh;
 width: 60%;
@@ -438,7 +446,7 @@ h6{
 }
 
 form{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
