@@ -1,0 +1,544 @@
+/* this is comment */
+*{
+    box-sizing: border-box;
+    padding:10px;
+}
+.heading{
+    font-size: 50px;
+    position: relative;
+    -webkit-text-stroke: 2vw rgb(102, 6, 6);
+    text-transform: uppercase;
+    top: 90px;
+}
+.heading::before{
+content: attr(data-text);
+position: absolute;
+top: 10px;
+left: 9px;
+width: 0;
+height: 80%;
+color: cornsilk;
+-webkit-text-stroke: 0vw rgb(100, 151, 210);
+border-right: 2px solid cornsilk;
+overflow: hidden;
+animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+0%,10%,100%{
+    width: 0;
+}
+60%,90%{
+    width: 40%;
+}
+}
+
+.animated-background{
+    background: linear-gradient(
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: 400% 400%;
+        animation: animate-background 10s infinite ease-in-out;
+        height: 200px;
+}
+@keyframes animate-background{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+} 
+
+h3{
+position: relative;
+top: 160px;
+color: cornsilk;
+}
+
+h4{
+    position: relative;
+    top: 160px;
+    color: cornsilk;
+}
+
+h5{
+position: relative;
+top: 150px;
+color:cornsilk ;
+}
+
+.button1{
+    color:rgb(222, 193, 162);
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid rgb(10, 9, 13);
+    position: relative;
+}
+.button1::before,
+.button1::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.button1::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button1::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button1:hover::before,
+.button1:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+#navbar{
+    background-color: rgba(121, 7, 7, 0.834);
+    font-size: 20px;
+    display:flex;
+    justify-content: end;
+}
+
+#navbar a{
+    color: cornsilk;
+    text-decoration: none;
+}
+    
+#navbar a:hover{
+    color:rgb(223, 143, 157);
+}
+/* img{
+    width: 50%;
+    border-radius: 50%;
+    position: relative;
+    left: 700px;
+    bottom: 300px;  
+} */
+
+.card{
+    width: 1000px;
+    height: 1000px;
+    background-color: #5f0d0d;
+    border-radius: 10px;
+    outline: 1px solid cornsilk;
+    outline-offset: -8px;
+    box-shadow: 5px 5px 10px 10px black;
+    position: relative;
+    left: 800px;
+    bottom: 250px;
+    overflow: hidden;
+}
+.card-image{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+    transition: transform .75s;
+}
+
+.card:hover .card-image{
+    transform: scale(1.15);
+}
+
+.page1{
+    background-color: rgb(102, 6, 6);
+}
+
+/* .btn-linkedin {
+        background: #0E76A8;
+        border-radius: 20%;
+        color: #fff;
+        border-width: 0px;
+        border-style: solid;
+        border-color: #084461;
+        text-decoration: none;
+        position: relative;
+        bottom: 40px;
+        left: 20px;
+    }
+.btn-linkedin:link, .btn-linkedin:visited {
+        color: #fff;
+    }
+.btn-linkedin:active, .btn-linkedin:hover {
+        background: #084461;
+        color: #fff;
+    }
+/* #GitHub{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+} */
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position:absolute;
+    top:30px;
+
+}
+.fa:hover {
+    outline-offset: 4px;
+    opacity: 0.7;
+}
+.fa:hover a{
+    animation: shake .25s;
+}
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github{
+    background: #00b489;
+    color: white;
+    position: absolute;
+    left: 120px;
+}
+
+/* Page 2 About me */
+
+.page2{
+    background: linear-gradient( 
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: 400% 400%;
+        animation: page2 10s infinite ease-in-out;
+}
+@keyframes page2{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+}
+input[type=submit]:hover {
+    background-color: #007bb5;
+}
+
+.animated-background2{
+    background: linear-gradient( 
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: cover;
+        animation: animate-background2 10s infinite ease-in-out;
+}
+@keyframes animate-background2{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+}
+/* .page2{
+    background-color: #5f0d0d;
+}   */
+
+.card1{
+    width: 300px;
+    height: 300px;
+    background-color: #5f0d0d;
+    border-radius: 10px;
+    outline: 1px solid cornsilk;
+    outline-offset: -8px;
+    box-shadow: 5px 5px 10px 10px black;
+    position: center;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+.card-image1{
+    position: center;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+    transition: transform .75s;
+}
+
+.card1:hover .card-image1{
+    transform: scale(1.15);
+}
+
+.intro{
+    font-size: 17px;
+    color: cornsilk;
+    text-align: center;
+}
+.hobbies{
+    font-size: 17px;
+    color: cornsilk;
+    text-align: center;
+}
+
+.gallery{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform-style: preserve-3d;
+    animation: animate88 20s linear infinite;
+}
+@keyframes animate88
+{
+    0%
+{
+    transform: perspective(1000px) rotateY(0deg);
+}
+100%
+{
+    transform: perspective(1000px) rotateY(360deg);
+}
+}
+
+.gallery span {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.gallery span img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.gallery span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+
+/* page 3 projects  */
+
+
+.animated-background3{
+    background: linear-gradient( 
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: cover;
+        animation: animate-background3 10s infinite ease-in-out;
+}
+@keyframes animate-background3{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+}
+
+.page3{
+    background: linear-gradient(
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: 400% 400%;
+        animation: page3 10s infinite ease-in-out;
+        height: 200px;
+}
+@keyframes page3{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+} 
+.projects{
+    text-align: center;
+    color: cornsilk;
+}
+
+.experience{
+    text-align: center;
+    color: cornsilk;
+    font-size: 20px;
+    word-spacing: 1px;
+}
+a{
+    color:burlywood;
+}
+a:link{
+    text-decoration: none;
+    color: burlywood;
+}
+a:hover{
+text-decoration: none;
+}
+a:active{
+    text-decoration: none;
+    color:burlywood;
+}
+a:visited{
+    text-decoration: none;
+}
+.videogame{
+text-align: center;
+position: relative;
+top: 200px;
+font-weight: lighter;
+color: khaki;
+}
+/* page 4 contacts */
+
+
+.page4{
+    background: linear-gradient(
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: 400% 400%;
+        animation: page4 10s infinite ease-in-out;
+        height: 200px;
+}
+@keyframes page4{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+} 
+section {
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 300px;
+flex-direction: column;
+/* align-items: center; */
+/* justify-content: center; */
+height: 100vh;
+width: 60%;
+/* background-color: blueviolet; */
+}
+
+h6{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: cornsilk;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width:90%;
+    height: 600px;
+    background-color: #4b0606;
+    border-radius: 20px;
+    box-shadow: 10px 15px 25px;
+}
+
+#name,
+#email{
+    width:60%;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    background-color: rgb(231, 190, 199);
+    color: black;
+}
+#textbox{
+border-radius: 10px;
+border: none;
+padding: 10px 15px;
+outline: none;
+background-color: rgb(231, 190, 199);
+color: black;
+}
+
+#textbox::placeholder{
+    color: black;
+}
+
+input[type=submit]{
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(231, 190, 199);
+    color: black;
+    transition: .4s;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: #007bb5;
+}
+
+.animated-background4{
+    background: linear-gradient( 
+        to right, rgb(112, 28, 29),
+        rgb(92, 38, 42),rgb(151, 94, 99));
+        background-size: cover;
+        animation: animate-background4 10s infinite ease-in-out;
+}
+@keyframes animate-background4{
+    0%{
+    background-position: 0 50%;
+}  
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+}
