@@ -160,30 +160,6 @@ color:cornsilk ;
     background-color: rgb(102, 6, 6);
 }
 
-/* .btn-linkedin {
-        background: #0E76A8;
-        border-radius: 20%;
-        color: #fff;
-        border-width: 0px;
-        border-style: solid;
-        border-color: #084461;
-        text-decoration: none;
-        position: relative;
-        bottom: 40px;
-        left: 20px;
-    }
-.btn-linkedin:link, .btn-linkedin:visited {
-        color: #fff;
-    }
-.btn-linkedin:active, .btn-linkedin:hover {
-        background: #084461;
-        color: #fff;
-    }
-/* #GitHub{
-    display:flex;
-    flex-direction: row;
-    justify-content:flex-start;
-} */
 
 .fa {
     padding: 20px;
@@ -235,9 +211,6 @@ color:cornsilk ;
     background-position: 0 50%;
 }
 }
-input[type=submit]:hover {
-    background-color: #007bb5;
-}
 
 .animated-background2{
     background: linear-gradient( 
@@ -257,9 +230,6 @@ input[type=submit]:hover {
     background-position: 0 50%;
 }
 }
-/* .page2{
-    background-color: #5f0d0d;
-}   */
 
 .card1{
     width: 300px;
@@ -454,11 +424,9 @@ margin-right: auto;
 position: relative;
 top: 300px;
 flex-direction: column;
-/* align-items: center; */
-/* justify-content: center; */
 height: 100vh;
 width: 60%;
-/* background-color: blueviolet; */
+
 }
 
 h6{
