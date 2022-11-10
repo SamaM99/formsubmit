@@ -516,6 +516,7 @@ input[type=submit]:hover {
 .thanks{
     text-align: left;
     background-color: #5f0d0d;
+    background-size: contain;
     font-size: larger;
     font-weight: lighter;
     color: cornsilk;
